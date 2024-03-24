@@ -1,7 +1,5 @@
-import style from './Main.module.scss';
-
 function Main() {
-  return <div className={style.back}></div>;
+  return <div className="back" />;
 }
 
 export { Main };

@@ -1,71 +1,53 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(180deg, 29%, 50%);
+  --light-grayish-cyan-background: hsl(180deg, 52%, 96%);
+  --light-grayish-cyan-filter-tablets: hsl(180deg, 31%, 95%);
+  --dark-grayish-cyan: hsl(180deg, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180deg, 14%, 20%);
+  --home-font: 'League Spartan', sans-serif;
+  --main-shadow: 0.5px 0.9px 0 rgb(0, 0, 0, 0.3);
+  --header-size: 150px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-
-  &:hover {
-    color: #535bf2;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
+html,
+body,
+div,
+h1,
+h2,
+section {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 20rem;
-  min-height: 100dvh;
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+  font-family: var(--home-font);
+  vertical-align: baseline;
+  text-rendering: optimizelegibility;
+  text-size-adjust: none;
 }
 
-h1 {
-  font-size: 2rem;
-  line-height: 1.1;
+.head {
+  width: 100%;
+  height: var(--header-size);
+  background: var(--dark-cyan);
+  background-image: url('./assets/images/bg-header-mobile.svg');
 }
 
-button {
-  border-radius: 0.5rem;
-  border: 0.075rem solid transparent;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 250ms;
-
-  &:hover {
-    border-color: #646cff;
-  }
-
-  &:focus,
-  &:focus-visible {
-    outline: 0.25rem auto -webkit-focus-ring-color;
-  }
+.back {
+  background-color: var(--light-grayish-cyan-background);
+  width: 100%;
+  height: calc(100vh - var(--header-size));
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fff;
+@media (width >= 768px) {
+  .head {
+    background-image: url('./assets/images/bg-header-desktop.svg');
   }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+}
