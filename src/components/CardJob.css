@@ -1,25 +1,32 @@
 .card {
+  background-color: #fff;
+  width: 80%;
+  box-shadow: var(--main-shadow);
   border-radius: 0.3rem;
   padding: 1rem;
   position: relative;
   margin-top: 2.5rem;
 }
+
 .img-logo {
   width: 3.5rem;
   position: absolute;
   top: -1.8rem;
   left: 1.5rem;
 }
+
 .company {
   font-size: 1.1rem;
   color: var(--dark-cyan);
   cursor: pointer;
 }
+
 .first-line {
   padding: 0.7rem 0;
   display: flex;
   align-items: center;
 }
+
 .new {
   margin: 0 1rem;
   font-size: 1rem;
@@ -31,6 +38,7 @@
   background-color: var(--dark-cyan);
   border-radius: 1rem;
 }
+
 .featured {
   font-size: 1rem;
   color: white;
@@ -41,25 +49,26 @@
   background-color: black;
   border-radius: 1rem;
 }
+
 .position {
   font-weight: bold;
   margin: 0;
 }
+
 .third-line {
   display: flex;
 }
+
 .postedAt,
 .contract,
 .location {
   color: var(--dark-grayish-cyan);
 }
+
 span {
   margin: 0 0.5rem;
 }
+
 hr {
   border-top: 0.1rem solid var(--dark-grayish-cyan);
-}
-.contract {
-}
-.location {
 }

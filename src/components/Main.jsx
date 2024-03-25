@@ -1,4 +1,5 @@
 import { ListCards } from './ListCards';
+import './Main.css';
 
 function Main() {
   return (

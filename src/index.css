@@ -8,7 +8,7 @@
   --very-dark-grayish-cyan: hsl(180deg, 14%, 20%);
   --home-font: 'League Spartan', sans-serif;
   --main-shadow: 0 0.3rem 1rem 0.3rem rgb(0, 1, 1, 0.2);
-  --header-size: 150px;
+  --header-size: 9rem;
 }
 
 *,
@@ -30,37 +30,4 @@ section {
   vertical-align: baseline;
   text-rendering: optimizelegibility;
   text-size-adjust: none;
-}
-
-.head {
-  width: 100%;
-  height: var(--header-size);
-  background: var(--dark-cyan);
-  background-image: url('./assets/images/bg-header-mobile.svg');
-}
-
-.back {
-  background-color: var(--light-grayish-cyan-background);
-  width: 100%;
-  height: calc(100vh - var(--header-size));
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  background-color: #fff;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: var(--main-shadow);
-}
-
-@media (width >= 768px) {
-  .head {
-    background-image: url('./assets/images/bg-header-desktop.svg');
-  }
 }
