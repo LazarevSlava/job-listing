@@ -1,0 +1,5 @@
+.back {
+  background-color: var(--light-grayish-cyan-background);
+  width: 100%;
+  height: calc(6.25rem - var(--header-size));
+}
