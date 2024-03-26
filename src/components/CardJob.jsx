@@ -1,5 +1,5 @@
 import { baseUrl } from '../constants';
-import './CardJob.css';
+import style from './CardJob.module.css';
 import { ButtonLanguage } from './ButtonsLanguages';
 
 function CardJob(props) {
@@ -14,36 +14,37 @@ function CardJob(props) {
     languages,
     role,
     level,
+    new: isNew,
   } = props;
 
   const logoBase = baseUrl + logo.slice(1);
 
   return (
-    <div className="card">
-      <img className="img-logo" src={logoBase} alt="logo" />
-      <div className="first-line">
-        <p className="company">{company}</p>
-        {props.new ? <p className="new">NEW!</p> : ''}
-        {featured ? <p className="featured">FEATURED</p> : ''}
+    <div className={style.card}>
+      <img className={style.img_logo} src={logoBase} alt="logo" />
+      <div className={style.first_line}>
+        <p className={style.company}>{company}</p>
+        {isNew ? <p className={style.new}>NEW!</p> : ''}
+        {featured ? <p className={style.featured}>FEATURED</p> : ''}
       </div>
-      <p className="position">{position}</p>
-      <div className="third-line">
-        <p className="postedAt">
+      <p className={style.position}>{position}</p>
+      <div className={style.third_line}>
+        <p className={style.postedAt}>
           {postedAt}
           <span>&middot;</span>
         </p>
-        <p className="contract">
+        <p className={style.contract}>
           {contract}
           <span>&middot;</span>
         </p>
-        <p className="location">{location}</p>
+        <p className={style.location}>{location}</p>
       </div>
       <hr />
-      <div className="btn-block">
-        {<ButtonLanguage key={role} item={role} />}
-        {<ButtonLanguage key={level} item={level} />}
-        {languages.map((item, index) => (
-          <ButtonLanguage key={index} item={item} />
+      <div className={style.btn_block}>
+        {<ButtonLanguage key={role}>{role}</ButtonLanguage>}
+        {<ButtonLanguage key={level}>{level}</ButtonLanguage>}
+        {languages.map((lang, index) => (
+          <ButtonLanguage key={index}>{lang}</ButtonLanguage>
         ))}
       </div>
     </div>

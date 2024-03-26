@@ -1,11 +1,10 @@
+import style from './ListCards.module.css';
 import { CardJob } from './CardJob';
-import data from '../data.json';
-import './ListCards.css';
 
-function ListCards() {
+function ListCards({ jobs = [] }) {
   return (
-    <div className="list">
-      {data.map((item) => (
+    <div className={style.list}>
+      {jobs.map((item) => (
         <CardJob key={item.id} {...item} />
       ))}
     </div>

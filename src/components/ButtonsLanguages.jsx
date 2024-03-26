@@ -1,6 +1,6 @@
-import './ButtonLanguage.css';
+import style from './ButtonLanguage.module.css';
 
-function ButtonLanguage({ item }) {
-  return <button className="btn">{item}</button>;
+function ButtonLanguage({ children }) {
+  return <button className={style.btn}>{children}</button>;
 }
 export { ButtonLanguage };

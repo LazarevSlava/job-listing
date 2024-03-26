@@ -1,6 +1,7 @@
-import './Header.css';
+import style from './Header.module.css';
+
 function Header() {
-  return <div className="head" />;
+  return <div className={style.head} />;
 }
 
 export { Header };

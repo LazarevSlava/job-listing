@@ -8,7 +8,7 @@
   margin-top: 2.5rem;
 }
 
-.img-logo {
+.img_logo {
   width: 3.5rem;
   position: absolute;
   top: -1.8rem;
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.first-line {
+.first_line {
   padding: 0.7rem 0;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
   margin: 0;
 }
 
-.third-line {
+.third_line {
   display: flex;
 }
 

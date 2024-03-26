@@ -1,11 +1,14 @@
 import { Header } from './components/Header';
 import { Main } from './components/Main';
+import { JobsDataContext } from './helpers/JobsDataContext';
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <JobsDataContext>
+        <Header />
+        <Main />
+      </JobsDataContext>
     </>
   );
 }
