@@ -7,8 +7,8 @@
   --dark-grayish-cyan: hsl(180deg, 8%, 52%);
   --very-dark-grayish-cyan: hsl(180deg, 14%, 20%);
   --home-font: 'League Spartan', sans-serif;
-  --main-shadow: 0.5px 0.9px 0 rgb(0, 0, 0, 0.3);
-  --header-size: 150px;
+  --main-shadow: 0 0.3rem 1rem 0.3rem rgb(0, 1, 1, 0.2);
+  --header-size: 9rem;
 }
 
 *,
@@ -26,7 +26,6 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 15px;
   font-family: var(--home-font);
   vertical-align: baseline;
   text-rendering: optimizelegibility;
