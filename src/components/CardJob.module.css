@@ -65,8 +65,16 @@
   color: var(--dark-grayish-cyan);
 }
 
-span {
-  margin: 0 0.5rem;
+.postedAt,
+.contract {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  border-radius: 50%;
+  border: 0.15rem solid var(--dark-grayish-cyan);
+  margin: 0 0.6rem;
 }
 
 hr {

@@ -31,11 +31,11 @@ function CardJob(props) {
       <div className={style.third_line}>
         <p className={style.postedAt}>
           {postedAt}
-          <span>&middot;</span>
+          <span className={style.dot}></span>
         </p>
         <p className={style.contract}>
           {contract}
-          <span>&middot;</span>
+          <span className={style.dot}> </span>
         </p>
         <p className={style.location}>{location}</p>
       </div>
