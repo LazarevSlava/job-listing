@@ -8,3 +8,8 @@
   color: var(--dark-cyan);
   font-weight: bolder;
 }
+
+.btn:hover {
+  background-color: var(--dark-cyan);
+  color: white;
+}

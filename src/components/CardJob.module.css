@@ -53,6 +53,11 @@
 .position {
   font-weight: bold;
   margin: 0;
+  cursor: pointer;
+}
+
+.position:hover {
+  color: var(--dark-cyan);
 }
 
 .third_line {
