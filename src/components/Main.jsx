@@ -1,7 +1,7 @@
-import './Main.css';
+import style from './Main.module.css';
 
 function Main() {
-  return <div className="back" />;
+  return <div className={style.black} />;
 }
 
 export { Main };
