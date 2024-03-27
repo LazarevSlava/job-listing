@@ -2,11 +2,11 @@
   width: 100%;
   height: var(--header-size);
   background: var(--dark-cyan);
-  background-image: url('../assets/images/bg-header-mobile.svg');
+  background-image: url('/images/bg-header-mobile.svg');
 }
 
 @media (width >= 768px) {
   .head {
-    background-image: url('../assets/images/bg-header-desktop.svg');
+    background-image: url('/images/bg-header-desktop.svg');
   }
 }

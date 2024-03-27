@@ -1,12 +1,28 @@
 .btn {
+  display: inline-block;
   margin: 0.8rem 1rem 0 0;
   border: none;
   cursor: pointer;
   border-radius: 0.3rem;
-  padding: 0.7rem;
+  padding: 0.7rem 1.1rem;
   background-color: var(--light-grayish-cyan-background);
   color: var(--dark-cyan);
   font-weight: bolder;
+  position: relative;
+}
+.close {
+  top: 0;
+  right: -1.4rem;
+  background-color: var(--dark-cyan);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/images/icon-remove.svg');
+  width: 2rem;
+  height: 100%;
+  border-radius: 0 0.3rem 0.3rem 0;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {

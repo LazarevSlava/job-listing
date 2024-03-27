@@ -20,7 +20,7 @@ function CardJob(props) {
   const logoBase = baseUrl + logo.slice(1);
 
   return (
-    <div className={style.card}>
+    <div className={`${style.card} ${featured ? style.leftSide : ''}`}>
       <img className={style.img_logo} src={logoBase} alt="logo" />
       <div className={style.first_line}>
         <p className={style.company}>{company}</p>
