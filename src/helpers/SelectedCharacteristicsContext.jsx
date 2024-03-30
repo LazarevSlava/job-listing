@@ -17,7 +17,9 @@ export function SelectedCharacteristicsContext(props) {
 
   const handleRemove = (characteristics) => {
     setSelectedCharacteristics((selectedCharacteristics) =>
-      selectedCharacteristics.splice(selectedCharacteristics.indexOf(characteristics), 1),
+      selectedCharacteristics.filter(
+        (selectedCharacteristics) => selectedCharacteristics !== characteristics,
+      ),
     );
   };
 

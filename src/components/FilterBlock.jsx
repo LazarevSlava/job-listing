@@ -4,19 +4,19 @@ import { useCharacteristicsContext } from '../hooks/useCharacteristicsContext';
 
 function FilterBlock() {
   const { selectedCharacteristics = [], handleClear } = useCharacteristicsContext();
-  const close = true;
+
   return (
     <div className={style.filter}>
       <div className={style.btn_block}>
         {selectedCharacteristics.map((item, index) => (
-          <ButtonLanguage close={close} key={index}>
+          <ButtonLanguage parentName={FilterBlock} key={index}>
             {item}
           </ButtonLanguage>
         ))}
       </div>
-      <span onClick={() => handleClear()} className={style.clear}>
+      <button onClick={() => handleClear()} className={style.clear}>
         Clear
-      </span>
+      </button>
     </div>
   );
 }
