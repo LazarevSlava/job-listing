@@ -4,7 +4,6 @@ export const CharacteristicsContext = createContext();
 
 export function SelectedCharacteristicsContext(props) {
   const [selectedCharacteristics, setSelectedCharacteristics] = useState([]);
-  console.log(selectedCharacteristics);
 
   const handleSelect = (characteristics) => {
     if (selectedCharacteristics.includes(characteristics)) {

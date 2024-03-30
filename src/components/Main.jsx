@@ -16,23 +16,16 @@ function Main() {
       return jobs;
     }
 
-    let filtered = [];
-    if (selectedCharacteristics.length) {
-      filtered = jobs.filter((item) =>
-        selectedCharacteristics.some(
-          (characteristic) =>
-            item.role.includes(characteristic) || item.level.includes(characteristic),
-        ),
+    const filtered = jobs.filter((item) => {
+      const { role, level, languages } = item;
+      return selectedCharacteristics.every(
+        (characteristic) =>
+          role.includes(characteristic) ||
+          level.includes(characteristic) ||
+          languages.includes(characteristic),
       );
+    });
 
-      // filtered = jobs.filter(
-      //   (item) =>
-      //     item.role.includes(selectedCharacteristics) ||
-      //     item.level.includes(selectedCharacteristics) ||
-      //     item.languages.some((item) => selectedCharacteristics.includes(item)),
-      // );
-    }
-    console.log(filtered);
     return filtered;
   }, [jobs, selectedCharacteristics]);
 
