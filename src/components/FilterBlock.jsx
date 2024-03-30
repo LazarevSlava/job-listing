@@ -14,9 +14,9 @@ function FilterBlock() {
           </ButtonLanguage>
         ))}
       </div>
-      <button onClick={() => handleClear()} className={style.clear}>
+      <a onClick={handleClear} className={style.clear}>
         Clear
-      </button>
+      </a>
     </div>
   );
 }
