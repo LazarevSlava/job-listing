@@ -22,8 +22,5 @@
 
 .btn_block {
   width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
   justify-items: start;
-  gap: 0.3rem 1rem;
 }

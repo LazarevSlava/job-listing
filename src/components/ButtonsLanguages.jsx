@@ -1,13 +1,18 @@
 import style from './ButtonLanguage.module.css';
-import { useCharacteristicsContext } from '../hooks/useCharacteristicsContext';
 
-function ButtonLanguage({ children, parentName }) {
-  const { handleSelect, handleRemove } = useCharacteristicsContext();
+function ButtonLanguage({ children, isClose, handleSelect, handleRemove }) {
   return (
-    <button onClick={() => handleSelect(children)} className={style.btn}>
-      {children}
-      {parentName ? <a onClick={() => handleRemove(children)} className={style.close}></a> : ''}
-    </button>
+    <>
+      {isClose ? (
+        <button className={style.btn_close} onClick={() => handleRemove(children)}>
+          {children}
+        </button>
+      ) : (
+        <button className={style.btn} onClick={() => handleSelect(children)}>
+          {children}
+        </button>
+      )}
+    </>
   );
 }
 export { ButtonLanguage };
