@@ -1,15 +1,36 @@
 .btn {
+  display: inline-block;
   margin: 0.8rem 1rem 0 0;
   border: none;
   cursor: pointer;
   border-radius: 0.3rem;
-  padding: 0.7rem;
+  padding: 0.7rem 1.1rem;
   background-color: var(--light-grayish-cyan-background);
   color: var(--dark-cyan);
   font-weight: bolder;
 }
 
+.close {
+  background: linear-gradient(
+    to right,
+    var(--light-grayish-cyan-background) calc(100% - 1.7rem),
+    var(--dark-cyan) calc(100% - 1.7rem)
+  );
+  color: var(--dark-cyan);
+  font-weight: bolder;
+  background-position: right center;
+  padding-right: 2.2rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.close::after {
+  content: url('/images/icon-remove.svg');
+  position: absolute;
+  right: 0.4rem;
+}
+
 .btn:hover {
-  background-color: var(--dark-cyan);
+  background: var(--dark-cyan);
   color: white;
 }

@@ -1,8 +1,11 @@
 import { baseUrl } from '../constants';
 import style from './CardJob.module.css';
 import { ButtonLanguage } from './ButtonsLanguages';
+import { useCharacteristicsContext } from '../hooks/useCharacteristicsContext';
 
 function CardJob(props) {
+  const { handleSelect } = useCharacteristicsContext();
+
   const {
     company,
     logo,
@@ -20,7 +23,7 @@ function CardJob(props) {
   const logoBase = baseUrl + logo.slice(1);
 
   return (
-    <div className={style.card}>
+    <div className={`${style.card} ${featured ? style.leftSide : ''}`}>
       <img className={style.img_logo} src={logoBase} alt="logo" />
       <div className={style.first_line}>
         <p className={style.company}>{company}</p>
@@ -41,10 +44,14 @@ function CardJob(props) {
       </div>
       <hr />
       <div className={style.btn_block}>
-        {<ButtonLanguage key={role}>{role}</ButtonLanguage>}
-        {<ButtonLanguage key={level}>{level}</ButtonLanguage>}
+        <ButtonLanguage onClick={handleSelect}>{role}</ButtonLanguage>
+
+        <ButtonLanguage onClick={handleSelect}>{level}</ButtonLanguage>
+
         {languages.map((lang, index) => (
-          <ButtonLanguage key={index}>{lang}</ButtonLanguage>
+          <ButtonLanguage key={index} onClick={handleSelect}>
+            {lang}
+          </ButtonLanguage>
         ))}
       </div>
     </div>

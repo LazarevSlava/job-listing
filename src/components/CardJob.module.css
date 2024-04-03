@@ -8,6 +8,10 @@
   margin-top: 2.5rem;
 }
 
+.leftSide {
+  border-left: 0.3rem solid black;
+}
+
 .img_logo {
   width: 3.5rem;
   position: absolute;
@@ -18,7 +22,6 @@
 .company {
   font-size: 1.1rem;
   color: var(--dark-cyan);
-  cursor: pointer;
 }
 
 .first_line {

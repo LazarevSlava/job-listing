@@ -1,4 +1,8 @@
 .back {
+  display: flex;
+  flex-direction: column;
+  margin: -2rem 0;
+  align-items: center;
   background-color: var(--light-grayish-cyan-background);
   width: 100%;
   height: calc(6.25rem - var(--header-size));
