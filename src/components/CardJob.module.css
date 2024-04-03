@@ -1,6 +1,6 @@
 .card {
   background-color: #fff;
-  width: 80%;
+  width: 100%;
   box-shadow: var(--main-shadow);
   border-radius: 0.3rem;
   padding: 1rem;
@@ -25,7 +25,7 @@
 }
 
 .first_line {
-  padding: 0.7rem 0;
+  padding: 0.2rem 0;
   display: flex;
   align-items: center;
 }
@@ -87,4 +87,37 @@
 
 hr {
   border-top: 0.1rem solid var(--dark-grayish-cyan);
+}
+
+@media (width >= 700px) {
+  .btn_block {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: first baseline;
+    margin: 0 1rem 0 4rem;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .img_logo {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    top: 0;
+    left: 1rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .first_section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.2rem;
+  }
 }
