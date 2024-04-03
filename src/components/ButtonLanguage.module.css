@@ -10,13 +10,7 @@
   font-weight: bolder;
 }
 
-.btn_close {
-  display: inline-block;
-  margin: 0.8rem 1rem 0 0;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  padding: 0.7rem 1rem;
+.close {
   background: linear-gradient(
     to right,
     var(--light-grayish-cyan-background) calc(100% - 1.7rem),
@@ -30,25 +24,14 @@
   position: relative;
 }
 
-.btn_close::after {
+.close::after {
   content: url('/images/icon-remove.svg');
   position: absolute;
   right: 0.4rem;
 }
 
-.close {
-  top: 0;
-  right: -1.4rem;
-  background-color: var(--dark-cyan);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('/images/icon-remove.svg');
-  width: 2rem;
-  height: 100%;
-  border-radius: 0 0.3rem 0.3rem 0;
-  border: none;
-  cursor: pointer;
+.close:hover {
+  background: var(--dark-cyan);
 }
 
 .btn:hover {

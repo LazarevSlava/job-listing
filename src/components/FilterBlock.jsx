@@ -9,7 +9,7 @@ function FilterBlock() {
     <div className={style.filter}>
       <div className={style.btn_block}>
         {selectedCharacteristics.map((item, index) => (
-          <ButtonLanguage key={index} handleRemove={handleRemove} isClose>
+          <ButtonLanguage key={index} onClick={handleRemove} isClose>
             {item}
           </ButtonLanguage>
         ))}

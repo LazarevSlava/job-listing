@@ -44,18 +44,12 @@ function CardJob(props) {
       </div>
       <hr />
       <div className={style.btn_block}>
-        {
-          <ButtonLanguage key={role} handleSelect={handleSelect}>
-            {role}
-          </ButtonLanguage>
-        }
-        {
-          <ButtonLanguage key={level} handleSelect={handleSelect}>
-            {level}
-          </ButtonLanguage>
-        }
+        <ButtonLanguage onClick={handleSelect}>{role}</ButtonLanguage>
+
+        <ButtonLanguage onClick={handleSelect}>{level}</ButtonLanguage>
+
         {languages.map((lang, index) => (
-          <ButtonLanguage key={index} handleSelect={handleSelect}>
+          <ButtonLanguage key={index} onClick={handleSelect}>
             {lang}
           </ButtonLanguage>
         ))}
