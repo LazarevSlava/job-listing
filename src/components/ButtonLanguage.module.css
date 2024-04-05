@@ -34,3 +34,12 @@
   background: var(--dark-cyan);
   color: white;
 }
+
+.close:hover {
+  background: linear-gradient(
+    to right,
+    var(--light-grayish-cyan-background) calc(100% - 1.7rem),
+    black calc(100% - 1.7rem)
+  );
+  color: var(--dark-cyan);
+}
