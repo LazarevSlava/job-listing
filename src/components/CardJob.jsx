@@ -25,7 +25,7 @@ function CardJob(props) {
   return (
     <div className={`${style.card} ${featured ? style.leftSide : ''}`}>
       <img className={style.img_logo} src={logoBase} alt="logo" />
-      <div className={style.first_section}>
+      <div className={style.main_info}>
         <div className={style.first_line}>
           <p className={style.company}>{company}</p>
           {isNew ? <p className={style.new}>NEW!</p> : ''}
@@ -35,11 +35,11 @@ function CardJob(props) {
         <div className={style.third_line}>
           <p className={style.postedAt}>
             {postedAt}
-            <span className={style.dot}></span>
+            <span className={style.dot} />
           </p>
           <p className={style.contract}>
             {contract}
-            <span className={style.dot}> </span>
+            <span className={style.dot} />
           </p>
           <p className={style.location}>{location}</p>
         </div>

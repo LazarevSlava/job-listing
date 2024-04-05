@@ -91,9 +91,6 @@ hr {
 
 @media (width >= 700px) {
   .btn_block {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: first baseline;
     margin: 0 1rem 0 4rem;
   }
 
@@ -115,7 +112,7 @@ hr {
     display: none;
   }
 
-  .first_section {
+  .main_info {
     display: flex;
     flex-direction: column;
     margin-left: 2.2rem;
