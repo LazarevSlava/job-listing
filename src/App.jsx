@@ -5,14 +5,12 @@ import { SelectedCharacteristicsContext } from './helpers/SelectedCharacteristic
 
 function App() {
   return (
-    <>
-      <JobsDataContext>
-        <SelectedCharacteristicsContext>
-          <Header />
-          <Main />
-        </SelectedCharacteristicsContext>
-      </JobsDataContext>
-    </>
+    <JobsDataContext>
+      <SelectedCharacteristicsContext>
+        <Header />
+        <Main />
+      </SelectedCharacteristicsContext>
+    </JobsDataContext>
   );
 }
 

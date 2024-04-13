@@ -7,7 +7,7 @@ export function JobsDataContext(props) {
   const [jobs, setJobs] = useState([]);
 
   const fetchDate = useCallback(() => {
-    return fetch(`http://localhost:5173${baseUrl}/data.json`)
+    return fetch(`${window.location.origin}${baseUrl}/data.json`)
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);
