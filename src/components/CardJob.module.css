@@ -9,9 +9,13 @@
 }
 
 .btn_block {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0.5rem 0;
+}
+
+.btn_block button {
+  margin: 0.5rem;
 }
 
 .leftSide {
@@ -119,6 +123,7 @@ hr {
   }
 
   .main_info {
+    min-width: 15rem;
     display: flex;
     flex-direction: column;
     margin-left: 2.2rem;
