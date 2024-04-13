@@ -8,6 +8,12 @@
   margin-top: 2.5rem;
 }
 
+.btn_block {
+  display: grid;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
 .leftSide {
   border-left: 0.3rem solid black;
 }
@@ -89,7 +95,7 @@ hr {
   border-top: 0.1rem solid var(--dark-grayish-cyan);
 }
 
-@media (width >= 700px) {
+@media (width >= 930px) {
   .btn_block {
     margin: 0 1rem 0 4rem;
   }
